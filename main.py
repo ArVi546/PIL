@@ -1,2 +1,2 @@
-a = "aboba"
+a = "abobus"
 print(a)
