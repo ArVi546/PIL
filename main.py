@@ -1,5 +1,15 @@
-from PIL import Image,ImageDraw
+from PIL import Image, ImageDraw
 im = Image.new("RGB",(500,300),(219,193,27))
 draw=ImageDraw.Draw(im)
-draw.ellipse((100,100,150,200),fill="purple", outline='white')
+draw.rectangle((0,0,500,300),"#55AAFF","black")
+draw.rectangle((0,150,500,300),"white","black")
+draw.rectangle((100,140,400,180),"#804030","black")
+draw.rectangle((100,100,400,140),"#804030","black")
+draw.rectangle((100,180,400,220),"#804030","black")
+draw.rectangle((150,140,190,180),"#DEB887","black")
+draw.rectangle((300,140,340,220),"#251002","black")
+draw.polygon([(100,100), (400, 100), (250,0)], "white","black")
+draw.rectangle((50,220,90,270),"#804030","black")
+draw.polygon([(10,220), (130, 220), (70,170)], "green","black")
+draw.polygon([(20,180), (120, 180), (70,120)], "green","black")
 im.show()
